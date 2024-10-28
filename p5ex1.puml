@@ -1,0 +1,36 @@
+@startuml
+class Motorcycle {
++ void start()
++ void Stop()
++ void Eccelerate()
+}
+
+class Car {
++ void start()
++ void Stop()
++ void Eccelerate()
+}
+
+class Bicycle {
++ void start()
++ void Stop()
++ void Eccelerate()
+}
+
+abstract class Vehicle {
++ {abstract}void start()
++ {abstract}void Stop()
++ {abstract}void Eccelerate()
+}
+
+class MainActivity {
+# void onCreate(Bundle)
+}
+
+
+
+Vehicle <|-- Motorcycle
+Vehicle <|-- Car
+Vehicle <|-- Bicycle
+AppCompatActivity <|-- MainActivity
+@enduml
